@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Simple Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hsl(128, 64%, 46%);
+            color: hsl(168, 81%, 41%);
+            margin: 20px;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My first HTML web Page</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm learning how to design simple web pages using HTML.</p>
+        
+        <h3>My Interests</h3>
+        <ul>
+            <li>Web Development</li>
+            <li>Reading Books</li>
+        </ul>
+        
+        <h3>Favorite Websites</h3>
+        <ol>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+        </ol>
+        
+        <h3>Image Example</h3>
+        <img src="Amity-University-Jaipur.png" alt="Sample Image">
+        
+        <h3>Contact Me</h3>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Simple Web Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
