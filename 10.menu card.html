@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Restaurant Menu</title>
+    <style>
+        body {
+            background-color: #fdf2e9;
+            font-family: 'Georgia', serif;
+            color: #5c4033;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .menu-card {
+            background-color: #fff;
+            width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border: 3px solid #d4a373;
+        }
+        .menu-card h1 {
+            text-align: center;
+            color: #b05d3b;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .menu-section h2 {
+            color: #d46a38;
+            font-size: 1.5em;
+            border-bottom: 2px solid #d4a373;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e2b497;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .menu-item img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            margin-right: 15px;
+            border: 2px solid #d4a373;
+        }
+        .menu-item h3 {
+            font-size: 1.2em;
+            margin: 0;
+            color: #5c4033;
+        }
+        .menu-item p {
+            font-size: 0.9em;
+            color: #7e5d4a;
+            margin: 5px 0 0;
+        }
+        .price {
+            color: #b05d3b;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-left: auto;
+        }
+        .price::before {
+            content: "₹"; /* Rupee symbol */
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-card">
+        <h1>Indian Delight Menu</h1>
+        
+        <div class="menu-section">
+            <h2>Starters</h2>
+            <div class="menu-item">
+                <img src="samosa.jpeg" alt="Samosa">
+                <div>
+                    <h3>Samosa</h3>
+                    <p>Spiced potato and pea filling in a crisp pastry</p>
+                </div>
+                <div class="price">30</div>
+            </div>
+            <div class="menu-item">
+                <img src="pakora.jpeg" alt="Pakora">
+                <div>
+                    <h3>Pakora</h3>
+                    <p>Deep-fried fritters made from gram flour</p>
+                </div>
+                <div class="price">50</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Main Courses</h2>
+            <div class="menu-item">
+                <img src="chicken biryani.jpeg" alt="Biryani">
+                <div>
+                    <h3>Chicken Biryani</h3>
+                    <p>Aromatic basmati rice cooked with spices and chicken</p>
+                </div>
+                <div class="price">250</div>
+            </div>
+            <div class="menu-item">
+                <img src="paneer butter masala.jpeg" alt="Paneer Butter Masala">
+                <div>
+                    <h3>Paneer Butter Masala</h3>
+                    <p>Paneer cooked in a rich tomato and butter gravy</p>
+                </div>
+                <div class="price">180</div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <img src="gulab jamun.jpeg" alt="Gulab Jamun">
+                <div>
+                    <h3>Gulab Jamun</h3>
+                    <p>Soft milk-based balls in sugar syrup</p>
+                </div>
+                <div class="price">40</div>
+            </div>
+            <div class="menu-item">
+                <img src="rasmalai.jpeg" alt="Rasmalai">
+                <div>
+                    <h3>Rasmalai</h3>
+                    <p>Soft paneer patties soaked in sweetened milk</p>
+                </div>
+                <div class="price">50</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
