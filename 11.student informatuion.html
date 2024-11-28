@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> "Amity University Rajasthan" Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #11c17b;
+            margin: 20px;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: #f42906;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        select {
+            font-style: italic;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .password-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .password-container input[type="password"],
+        .password-container input[type="text"] {
+            padding-right:3px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            color: #888;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Information</h1>
+    <form>
+        <label for="Name">Full Name</label>
+        <input type="text" id="Name" name="Full Name" required>
+        <br><br>
+
+
+
+
+
+
+<label for="enrollmentNo">Student Enrollment</label>
+        <input type="text" id="enrollmentNo" name="enrollmentNo" required>
+        <br><br>
+
+        <label for="pass">Password</label>
+        <div class="password-container">
+            <input type="password" id="pass" name="pass" required>
+            <span class="toggle-password" onclick="togglePassword()">👁</span>
+        </div>
+        <br><br>
+
+        <label for="branch">Branch</label>
+        <select name="branch" id="branch" required>
+            <option value="">Select option</option>
+            <option value="CSE">CSE</option>
+            <option value="IT">IT</option>
+            <option value="AIIT">AIIT</option>
+            <option value="ABS">ABS</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+        </select>
+        <br><br>
+
+        <label>Gender</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="programming">Programming Languages</label>
+        <select name="programming" id="programming" required>
+            <option value="">Select Language</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+        <br><br>
+
+        <label for="dob">Birthday</label>
+        <input type="date" id="dob" name="dob" required>
+    </form>
+
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById("pass");
+            const toggleIcon = document.querySelector(".toggle-password");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleIcon.textContent = "o";
+            } else {
+                passwordField.type = "password";
+                toggleIcon.textContent = "👁";
+            }
+        }
+    </script>
+</body>
+
+</html>
