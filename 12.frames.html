@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amity University</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0972dc;
+            margin: 0;
+            padding: 0;
+        }
+
+        frame {
+            border: 2px solid #ce11df;
+            background-color: #421c93;
+        }
+
+        frame[name="header"] {
+            background-color: #1dbdc6;
+            color: #ffffff;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        frame[name="aset_header"] {
+            background-color: #b8ad15;
+            color: #ffffff;
+            text-align: center;
+            font-size: 1em;
+        }
+
+        frame[name="task_frame"], frame[name="placement_frame"] {
+            padding: 10px;
+            color: #333;
+        }
+
+        noframes p {
+            color: #ff0000;
+            text-align: center;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<frameset rows="10%, 9%, *">
+    <frame src="header1.html" name="header" noresize scrolling="no">
+    <frame src="header2.html" name="aset_header" noresize scrolling="no">
+    <frameset cols="40%, 60%">
+        <frame src="11.student informatuion.html" name="task_frame">
+        <frame src="download.html" name="placement_frame">
+    </frameset>
+</frameset>
+<noframes>
+    <body>
+        <p>Your browser does not support frames. Please update your browser.</p>
+    </body>
+</noframes>
+</html>
